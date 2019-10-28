@@ -7,7 +7,7 @@
 2. Carlos Arturo de la Rocha Hernandez - A01610608 - Campus San Luis Potosi
 3. Oscar Medina Romo  - A00569717 - Campus Leon
 4. Maria Renée Benavides Puente - A01139495 - Campus Monterrey
-5. Mauricio Chavez Barrajas - A011366428- Campus Santa Fe
+5. Mauricio Chávez Barajas - A011366428- Campus Santa Fe
 
 ---
 ## 1. Aspectos generales
