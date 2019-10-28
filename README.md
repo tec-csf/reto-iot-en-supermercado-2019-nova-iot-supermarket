@@ -3,11 +3,11 @@
 #### Equipo *[Poner aquí nombre del equipo]*
 
 ##### Integrantes:
-1. Jorge Uriel Lopez Diaz de Leon - A01154646 - San Luis Potosi*
-2. *[Poner aquí Nombre y Apellidos del integrante 2]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
-3. *[Poner aquí Nombre y Apellidos del integrante 3]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
-4. *[Poner aquí Nombre y Apellidos del integrante 4]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
-5. *[Poner aquí Nombre y Apellidos del integrante 5]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
+1. Jorge Uriel Lopez Diaz de Leon - A01154646 - Campus San Luis Potosi*
+2. Carlos Arturo de la Rocha Hernandez - A01610608 - Campus San Luis Potosi
+3. Oscar Medina Romo  - A00569717 - Campus Leon
+4. Maria Renée Benavides Puente - A01139495 - Campus Monterrey
+5. Mauricio Chavez Barrajas - A011366428- Campus Santa Fe
 
 ---
 ## 1. Aspectos generales
