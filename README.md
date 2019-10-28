@@ -1,6 +1,6 @@
 # IoT en el Supermercado
 ---
-#### Equipo *[Poner aquí nombre del equipo]*
+#### Equipo NOVA IOT SUPERMARKET
 
 ##### Integrantes:
 1. Jorge Uriel Lopez Diaz de Leon - A01154646 - Campus San Luis Potosi*
