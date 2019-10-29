@@ -1,0 +1,1 @@
+Tableau will be used along with BigQuery for displayig the BI dashboards.
