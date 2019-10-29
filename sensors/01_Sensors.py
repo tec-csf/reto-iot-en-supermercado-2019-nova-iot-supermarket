@@ -13,9 +13,9 @@ import cv2
 # Configuracion del tipo de sensor DHT
 sensor = Adafruit_DHT.DHT11
 #humedad
-pin = 23
+pin = 2
 #button camera
-chanel = 10
+chanel = 3
 #led_pin
 led_pin=12
 #button presencia alimento
@@ -34,12 +34,12 @@ GPIO.setup(led_pin, GPIO.OUT)
 # def callbackCamera(chanel):
 
 #         if GPIO.input(chanel) == GPIO.HIGH:
-#                 subprocess.call(['fswebcam -r 640x480 --no-banner /home/pi/Desktop/image.jpg', '-1'], shell=True)                                
+#                 subprocess.call(['fswebcam -r 640x480 --no-banner /home/pi/Desktop/image.jpg', '-1'], shell=True)
 #                 #delete photo.
 #                 #subprocess.call(['rm /home/pi/Desktop/image.jpg', '-1'], shell=True)
 
 def humCallback(pin):
-        humedad, temperatura = Adafruit_DHT.read_retry(sensor, pin)        
+        humedad, temperatura = Adafruit_DHT.read_retry(sensor, pin)
         if temperatura >21:
             GPIO.output(led_pin, GPIO.HIGH)
         else:
