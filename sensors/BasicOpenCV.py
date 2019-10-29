@@ -5,8 +5,8 @@ img=cv2.imread('messi.jpg',0)#read the image as grayscale image
 cv2.imshow('messi',img)
 k=cv2.waitKey(0) & 0xFF
 if k==27:
-cv2.destroyAllWindows()#close all display windows
+    cv2.destroyAllWindows()
 elif k==ord('s'): #wait for 's' to be pressed
 #save the image into new file
-cv2.imwrite('messigray.png',img)
-cv2.destroyAllWindows()
+    cv2.imwrite('messigray.png',img)
+    cv2.destroyAllWindows()
