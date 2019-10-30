@@ -1,0 +1,245 @@
+    1  dtae
+    2  date
+    3  date -s "2019/10/29 12:40"
+    4  sudo date -s "2019/10/29 12:40"
+    5  date
+    6  git clone https://github.com/vcubells/iot_supermercado.git
+    7  cd iot_supermercado/demo_05cd iot_supermercado/demo_05
+    8  cd iot_supermercado/demo_05cd
+    9  cd iot_supermercado/demo_05
+   10  /usr/bin/ruby -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   11  sudo apt-get update
+   12  sudo apt-get install build-essential
+   13  sudo apt-get install libssl-dev
+   14  sudo apt-get install python-dev
+   15  sudo apt-get install libffi-dev
+   16  pip install virtualenv
+   17  virtualenv env
+   18  sudo pip install virtualenv
+   19  source env/bin/activate
+   20  pip3 virtualenv env
+   21  virtualenv env
+   22  source env/bin/activate
+   23  sudo pip install paho-mqtt
+   24  sudo pip install pyjwt
+   25  sudo pip install cryptography
+   26  pip install -r requirements.txt
+   27  open requirements.txt 
+   28  pip install -r requirements.txt
+   29  ls
+   30  pip install -r requirements.txt
+   31  cd /home/pi/iot_supermercado/demo_05
+   32  pip install -r requirements.txt
+   33  ls
+   34  pip install -r requirements.txt
+   35  pip3 install -r requirements.txt
+   36  openssl req -x509 -newkey rsa:2048 -keyout demo_private.pem -nodes -out demo.pub -subj "/CN=unused"
+   37  ls
+   38  wget https://pki.google.com/roots.pem
+   39  ls
+   40  pwd
+   41  python simulate_pi.py
+   42  sudo python simulate_pi.py
+   43  python simulate_r pi.py
+   44  python simulate_rpi.py
+   45  clc
+   46  cls
+   47  clear
+   48  cd ..
+   49  git clone https://github.com/tec-csf/reto-iot-en-supermercado-2019-nova-iot-supermarket.git
+   50  sudo raspi-config
+   51  df -h
+   52  sudo apt-get update && sudo apt-get upgrade
+   53  ls
+   54  cd iot_supermercado/demo_06
+   55  cd iot_supermercado/demo_05
+   56  ls
+   57  demo_05
+   58  cd iot_supermercado
+   59  cd iot_supermercado/demo_05
+   60  open iot_supermercado
+   61  cd iot_supermercado/demo_05
+   62  cd ..
+   63  demo_05
+   64  cd demo_05
+   65  python simulate_pi.py
+   66  python simulate_rpi.py 
+   67  cd ..
+   68  ls
+   69  cd ..
+   70  ls
+   71  cd Documents/
+   72  ls
+   73  cd ..
+   74  cd iot_supermercado/
+   75  ls
+   76  cd reto-iot-en-supermercado-2019-nova-iot-supermarket/
+   77  ls
+   78  cd sensors/
+   79  ls
+   80  cd ..
+   81  ls
+   82  cd ..
+   83  git clone github.com/tec-csf/reto-iot-en-supermercado-2019-nova-iot-supermarket/tree/master/
+   84  git clone https:// github.com/tec-csf/reto-iot-en-supermercado-2019-nova-iot-supermarket/tree/master/
+   85  sudo git clone https:// github.com/tec-csf/reto-iot-en-supermercado-2019-nova-iot-supermarket/tree/master/
+   86  sudo git clone http:// github.com/tec-csf/reto-iot-en-supermercado-2019-nova-iot-supermarket/tree/master/
+   87  sudo git clone https://github.com/tec-csf/reto-iot-en-supermercado-2019-nova-iot-supermarket/tree/master/
+   88  git clone https://github.com/tec-csf/reto-iot-en-supermercado-2019-nova-iot-supermarket/tree/master/
+   89  sudo git clone https://github.com/tec-csf/reto-iot-en-supermercado-2019-nova-iot-supermarket/tree/master/
+   90  sudo git clone https://github.com/tec-csf/reto-iot-en-supermercado-2019-nova-iot-supermarket.git
+   91  ls
+   92  cd reto-iot-en-supermercado-2019-nova-iot-supermarket/
+   93  ls
+   94  git pull origin master
+   95  ls
+   96  ls sensors/
+   97  ls usb
+   98  lsusb
+   99  ls /dev/*USB*
+  100  ls/dev/*USB*
+  101  ls /dev/
+  102  ls /dev/usb
+  103  ls dev/tty0
+  104  cls
+  105  clear
+  106  ls
+  107  ls dev/
+  108  ls/dev/
+  109  ls /dev/
+  110  ls /dev/*usb*
+  111  ls /dev/*USB*
+  112  ls /dev/
+  113  ls /dev
+  114  sudo python card_reader.py
+  115  npm install node-red-contrib-usbhid
+  116  node-red-start
+  117  getHIDdevices
+  118  sudo getHIDdevices
+  119  sudo apt-get install nodejs npm node-semver
+  120  node-red-start
+  121  udo mkdir -p /etc/udev/rules.d
+  122  sudo mkdir -p /etc/udev/rules.d
+  123  sudo nano /etc/udev/rules.d/85-pure-data.rules
+  124  node-red-start
+  125  cd
+  126  cd iot_supermercado/reto-iot-en-supermercado-2019-nova-iot-supermarket/
+  127  ls
+  128  cd sensors/
+  129  ls
+  130  sudo python3 RFID.py 
+  131  python3 RFID.py 
+  132  sudo python3 RFID.py 
+  133  ls /dev/bus/usb/001/
+  134  ls /dev/bus/
+  135  ls /dev/bus/usb/
+  136  ls /dev/bus/usb/001/
+  137  lsusb
+  138  ls /dev/bus/usb/001/018 
+  139  sudo python3 RFID.py 
+  140  apt-cache search rfid
+  141  lsusb
+  142  git pull origin master
+  143  touch Database.csv
+  144  top
+  145  pstree -p chromiom
+  146  pstree -p chromium
+  147  pstree -p | grep chromium
+  148  killall chromium-browse
+  149  kill -9 878
+  150  pstree -p | grep chromium
+  151  top
+  152  cd
+  153  ls
+  154  /home/pi/iot_supermercado/demo_05
+  155  ls
+  156  cd iot_supermercado
+  157  ls
+  158  cd reto-iot-en-supermercado-2019-nova-iot-supermarket/
+  159  node-red-start
+  160  getHIDdevices
+  161  sudo getHIDdevices
+  162  inject
+  163  sudo apt update
+  164  sudo apt install libnfc5
+  165  sudo nfc-list
+  166  sudo apt-get update
+  167  sudo apt-get dist-upgrade
+  168  sudo apt-get install pcscd pcsc-tools
+  169  pcsc_scan
+  170  ls
+  171  sudo nfc-list
+  172  pip freeze
+  173  python
+  174  ls
+  175  cd iot_supermercado/reto-iot-en-supermercado-2019-nova-iot-supermarket/sensors/
+  176  ls
+  177  cd Adafruit_Python_DHT/
+  178  cd examples/
+  179  ls
+  180  python simpletest.py 
+  181  cd ..
+  182  ls
+  183  python TemperaturaDHT11.py
+  184  pyt
+  185  python TemperaturaDHT11.py
+  186  clear
+  187  python Magnetic Sensor.py
+  188  python Magnetic\ Sensor.py 
+  189  clear
+  190  python Magnetic\ Sensor.py 
+  191  clear
+  192  cd ...
+  193  cd ..
+  194  git pull master
+  195  git pull 
+  196  cd reto-iot-en-supermercado-2019-nova-iot-supermarket/
+  197  ls
+  198  cd sensors/
+  199  python Magnetic\ Sensor.py 
+  200  history
+  201  python --version
+  202  python3 --version
+  203  pip3 -V
+  204  pip3 search opencv
+  205  pwd
+  206  cd ..
+  207  ls
+  208  mkdir opencvTests
+  209  cd opencvTests/
+  210  ls
+  211  pwd
+  212  virtualenv cv
+  213  ls
+  214  source cv/bin/activate
+  215  clear
+  216  pip3 install opencv-python
+  217  ls
+  218  pwd
+  219  ls
+  220  mkdir images
+  221  ls images/
+  222  ls
+  223  ls images/
+  224  cat code/hough_line_transform.py 
+  225  nano code/hough_line_transform.py
+  226  ls
+  227  python3 code/hough_line_transform.py 
+  228  ls
+  229  nano code/hough_line_transform.py
+  230  python3 code/hough_line_transform.py 
+  231  apt-cache search libcblas
+  232  sudo apt-get install libcblas-dev
+  233  sudo apt-get install libatlas-base-dev
+  234  python3 code/hough_line_transform.py 
+  235  sudo apt-get install libjasper-dev
+  236  python3 code/hough_line_transform.py 
+  237  sudo apt-get install libqtgui4
+  238  python3 code/hough_line_transform.py 
+  239  sudo apt-get install libqt4-test
+  240  python3 code/hough_line_transform.py 
+  241  ls
+  242  python3 code/hough_line_transform.py 
+  243  history
+  244  histor.y > historia_opencv
+  245  history > historia_opencv
