@@ -57,7 +57,10 @@ Como parte de la entrega final del reto, se debe incluir la siguiente informaci�
 
 ## 2. Descripción del proyecto
 
-*[Incluya aquí la descripción del proyecto seleccionado.]*
+Se desarrollara un sistema para la detectar el comportamiento de los productos dentro de un refrigerador en un supermercado. El sistema contiene diferentes sensores que haran la retención de datos de los productos, posteriormente los datos se suben a la nube de Google para finalmente analizarlos y desplegar un dashboard con los insights del comportamiento. 
+
+El propósito del sistema es poder generar un sistema de lealtad entre los compradores del supermercado pero más alla de esto, el sistema arrojara datos que si se unen con las bases de datos que tienen los supermercados como inventarios, tickets se pueden generar insights como cuando un producto es en realidad comprado, si solo lo sacaron del refrigerador o bien si se lo robaron. Por otro lado, puedes detectar que productos se compran en conjunto y así poder crear promociones añadido a eso se puede rediseñar el espacio del supermercado con solo analizar que productos son los que más o no se compran. 
+
 
 ## 3. Solución
 
@@ -66,6 +69,9 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 ### 3.1 Modelos o servicios de *Machine Learning* utilizados
 
 *[Incluya aquí una explicación del análisis realizado y la justificación de los modelos y/o servicios de *Machine Learning* seleccionados. Incluya todo lo que considere necesario para que una persona sin conocimientos técnicos pueda entender de que trata su solución.]*
+
+Detección de género, edad y altura
+
 
 ### 3.2 Arquitectura de la solución
 
