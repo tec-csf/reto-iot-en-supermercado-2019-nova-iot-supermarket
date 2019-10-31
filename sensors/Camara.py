@@ -23,7 +23,12 @@ def camara():
     headers = { "Content-Type": "application/octet-stream" ,'Ocp-Apim-Subscription-Key': '7e9cfbb244204fb994babd6111235269'}
     response = requests.post(face_uri, headers=headers, data=data)
     faces = response.json()
-    pprint(length(faces))
-    #edad = faces["age"]
     pprint(faces)
-camara()
+    pprint(len(faces))
+    faces_list = faces["faces"]
+    for person in faces_list:
+        edad = person["age"]
+        genero = person["gender"]
+        pprint(edad)
+        pprint(genero)
+    return (edad, genero)

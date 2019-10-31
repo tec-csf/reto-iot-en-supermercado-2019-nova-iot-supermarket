@@ -1,6 +1,6 @@
 import Adafruit_DHT
 sensor = Adafruit_DHT.DHT11
-
+pin_temp = 3
 def temperatura(pin_temp):
     temperature = 0
     if (temperature <=22):
