@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import datetime
+import _thread
 import time
 import jwt
 import paho.mqtt.client as mqtt
@@ -8,8 +9,14 @@ from Camara import camara
 from TemperaturaDHT11 import temperatura
 from MagneticSensor import switch_puerta
 from RFIDReader import RFID_Read
+from SensorMovimiento import mov
 
-# Define some project-based variables
+#--------------------------------Variables de sensores------------------------------------------------------------------------------
+motion_sensor_pin = 26
+motion_led_pin = 19
+
+
+#--------------------------------Variables del Proyecto------------------------------------------------------------------------------
 ssl_private_key_filepath = '/home/pi/iot_supermercado/reto-iot-en-supermercado-2019-nova-iot-supermarket/API/demo_private.pem'
 ssl_algorithm = 'RS256'  # Either RS256 or ES256
 root_cert_filepath = '/home/pi/iot_supermercado/reto-iot-en-supermercado-2019-nova-iot-supermarket/API/roots.pem'
@@ -17,15 +24,11 @@ project_id = 'nova-semana-i'
 gcp_location = 'us-central1'
 registry_id = 'semana-i'
 device_id = 'rpi'
-edad_dat = ""
-genero_dat = ""
-
-# Get current time
-
+#------------------------------------------------------------------------------------------------------------------------------------
+# Tiempo Actual
 cur_time = datetime.datetime.utcnow()
 
-# Create a JWT
-
+# Crear JWT
 def create_jwt():
     token = {
         'iat': cur_time,
@@ -49,14 +52,11 @@ client.username_pw_set(
     username='unused',
     password=create_jwt())
 
-
 def error_str(rc):
     return '{}: {}'.format(rc, mqtt.error_string(rc))
 
-
 def on_connect(unusued_client, unused_userdata, unused_flags, rc):
     print('on_connect', error_str(rc))
-
 
 def on_publish(unused_client, unused_userdata, unused_mid):
     print('on_publish')
@@ -72,27 +72,28 @@ client.loop_start()
 
 # Could set this granularity to whatever we want based on device, monitoring needs, etc
 #
-#------------------------SENSORES---------------------------------------------------------------------------
-edad, genero = camara()
-temperature,humidity = temperatura(2)
-estado_puerta = switch_puerta(3)
-id_tag, des_tag = RFID_Read()
-#-------------------------------SEND PAYLOAD--------------------------------------------------
-payload = '{{ "ts": {}, "edad": {}, "genero": "{}", "temperature": {}, "humidity": {}, "estado_puerta": "{}","id_tag": {},"des_tag": "{}" }}'.format(
-    int(time.time()), str(edad), str(genero),temperature,humidity,str(estado_puerta),id_tag, str(des_tag))
-#id_tag,str(des_tag),,,
-# Uncomment following line when ready to publish
-client.publish(_MQTT_TOPIC, payload, qos=1)
+#--------------------------------------------SENSORES---------------------------------------------------------------------------
 
-#-----------------------------------------------------------------------------------------------------------
+#--------------------------------------------Callback-------------------------------------------------------
+while (True):
+    print ("Iniciar el while")
+    temperature,humidity = temperatura(13)
+    estado_puerta = switch_puerta(6)
+    movimiento = mov(motion_sensor_pin, motion_led_pin)
+    print(f"PUERTA: {estado_puerta} | MOVIMIENTO: {movimiento}")
+    if (estado_puerta == 'OPEN' and movimiento):
 
-#payload = '{{ "ts": {}, "edad": {}, "genero": "{}", "temperatura": {}  }}'.format(
-    #int(time.time()), str(edad), str(genero),temperatura)
-
-
-
-print("{}\n".format(payload))
-
-time.sleep(1)
-
-client.loop_stop()
+        print("Proceso Camara")
+        edad, genero = camara()
+        #_thread.start_new_thread(check_product, ("Checking Product"))
+        print("Checking")
+        id_tag, des_tag = RFID_Read()
+    #-------------------------------SEND PAYLOAD--------------------------------------------------
+        payload = '{{ "ts": {}, "edad": {}, "genero": "{}", "temperature": {}, "humidity": {}, "estado_puerta": "{}","id_tag": {},"des_tag": "{}" }}'.format(
+            int(time.time()), str(edad), str(genero),temperature,humidity,str(estado_puerta),id_tag, str(des_tag))
+    # Uncomment following line when ready to publish
+        client.publish(_MQTT_TOPIC, payload, qos=1)
+        #-----------------------------------------------------------------------------------------------------------
+        print("{}\n".format(payload))
+        time.sleep(1)
+        client.loop_stop()

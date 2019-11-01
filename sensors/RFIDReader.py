@@ -14,3 +14,4 @@ def RFID_Read():
         return (id_client,des_client)
             #return (True)
         GPIO.cleanup()
+RFID_Read()
